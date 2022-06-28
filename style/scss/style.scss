@@ -1,0 +1,135 @@
+@import "../normalize/normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap");
+
+$text-color: #252b42;
+$second-text-color: #737373;
+$light-text-color: #fff;
+$brown-color: #784f33;
+$width: calc(1050 / 1442) * 100%;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Martel", sans-serif;
+  font-style: normal;
+}
+
+.header {
+  background-image: url("../../imgs/header-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  .header__navbar {
+    padding: 0 60px;
+    .wrapper {
+      width: calc(1050 / 1322) * 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .header__logo {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+      color: $text-color;
+      display: inline-block;
+      padding: 36px 0 36px 0;
+    }
+    .header__links {
+      list-style: none;
+      display: inline-block;
+      padding: 40px 0;
+      li {
+        display: inline-block;
+        a {
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 24px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          margin-right: 21px;
+          color: $second-text-color;
+          transition: opacity 0.3s ease;
+          &:last-of-type {
+            margin: 0;
+          }
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+  .header__section {
+    display: flex;
+    width: $width;
+    margin: 0 auto;
+    .text-block {
+      width: 100%;
+    }
+    .buttons__wrapper {
+      padding-top: 35px;
+      width: 100%;
+      display: flex;
+      button {
+        border: none;
+        padding: 10px 36px;
+        width: 182px;
+        height: 48px;
+        border-radius: 37px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        cursor: pointer;
+        &:first-of-type {
+          color: $light-text-color;
+          background-color: $brown-color;
+          margin-right: 10px;
+        }
+        &:last-of-type {
+          color: $brown-color;
+          background: none;
+          border: 1px solid $brown-color;
+        }
+      }
+    }
+    .header__section-text-wrapper {
+      display: flex;
+      align-items: center;
+      h1 {
+        font-weight: 900;
+        font-size: 58px;
+        line-height: 65px;
+        letter-spacing: 0.2px;
+        color: $text-color;
+        margin: 0;
+      }
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+        padding-top: 35px;
+      }
+    }
+    .header__section-img-wrapper {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div {
+      width: 50%;
+    }
+  }
+}
