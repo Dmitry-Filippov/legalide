@@ -125,4 +125,80 @@ body {
   width: 50%;
 }
 
+.content .practice-areas {
+  width: 72.8155339806%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.content .practice-areas ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  list-style: none;
+  padding-top: 80px;
+}
+.content .practice-areas ul li {
+  min-height: 147px;
+  background: #f9f9f9;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content .practice-areas ul li p {
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.content .practice-areas ul li .buisness-text {
+  color: #fff;
+}
+.content .practice-areas ul li .icon {
+  width: 53px;
+  height: 53px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .practice-areas ul li .famili-icon {
+  background-image: url("../../imgs/low-icon.svg");
+}
+.content .practice-areas ul li .business-icon {
+  background-image: url("../../imgs/low-2-icon.svg");
+}
+.content .practice-areas ul li .trust-icon {
+  background-image: url("../../imgs/trust-icon.svg");
+}
+.content .practice-areas ul li:nth-of-type(2) {
+  background: #295c7a;
+}
+
+.section__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #252b42;
+}
+
+.section__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+  padding-top: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
