@@ -221,6 +221,80 @@ body {
   margin-top: 30px;
 }
 
+.about-us {
+  padding: 100px 0;
+}
+.about-us .about-us__wrapper {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .about-us__wrapper .about-us__video {
+  background-image: url("../../imgs/video-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 597px;
+  height: 442px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-us .about-us__wrapper .about-us__video button {
+  width: 98px;
+  height: 98px;
+  background: none;
+  background-image: url("../../imgs/video-button.svg");
+  background-position: center;
+  background-size: cover;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.about-us .about-us__wrapper .about-us__text {
+  width: 31.7142857143%;
+  max-width: 450px;
+}
+.about-us .about-us__wrapper .about-us__text .section__title {
+  text-align: left;
+}
+.about-us .about-us__wrapper .about-us__text .section__subtitle {
+  text-align: left;
+  padding-top: 10px;
+}
+.about-us .about-us__wrapper .about-us__text .text-with-icon {
+  padding-top: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.about-us .about-us__wrapper .about-us__text .text-with-icon .paragraphs {
+  max-width: 83%;
+}
+.about-us .about-us__wrapper .about-us__text .text-with-icon p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+.about-us .about-us__wrapper .about-us__text .text-with-icon .subtext {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.about-us .about-us__wrapper .about-us__text .text-with-icon .about-us__icon {
+  width: 32px;
+  height: 32px;
+  background-image: url("../../imgs/icon1of2.svg");
+}
+.about-us .about-us__wrapper .about-us__text .text-with-icon .about-us__icon_two {
+  background-image: url("../../imgs/icon2of2.svg");
+}
+
 .section_grey {
   background-color: #fafafa;
 }
