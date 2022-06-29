@@ -306,6 +306,119 @@ body {
   }
 }
 
+.subscribe {
+  position: relative;
+  .icons-row {
+    padding: 50px 0;
+    list-style: none;
+    width: $width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    li {
+      background-size: cover;
+      background-position: center;
+    }
+    .icon-1 {
+      width: 103px;
+      height: 34px;
+      background-image: url("../../imgs/icon1.png");
+      position: relative;
+      bottom: 15px;
+    }
+    .icon-2 {
+      width: 83px;
+      height: 59px;
+      background-image: url(../../imgs/icon2.png);
+      position: relative;
+      bottom: 4px;
+    }
+    .icon-3 {
+      width: 102px;
+      height: 75px;
+      background-image: url(../../imgs/icon3.png);
+    }
+    .icon-4 {
+      width: 103px;
+      height: 42px;
+      background-image: url(../../imgs/icon4.png);
+      position: relative;
+      bottom: 15px;
+    }
+    .icon-5 {
+      width: 104px;
+      height: 62px;
+      background-image: url(../../imgs/icon5.png);
+      position: relative;
+      bottom: 4px;
+    }
+    .icon-6 {
+      width: 80px;
+      height: 72px;
+      background-image: url(../../imgs/icon6.png);
+    }
+  }
+  form {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: calc(986 / 1440) * 100%;
+    padding: 30px 50px;
+    background: linear-gradient(270deg, #295c7a -1.04%, #0072b5 100%);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 222;
+    position: relative;
+    top: 0;
+    label {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+      color: $light-text-color;
+      display: inline-block;
+      width: 253px;
+    }
+    input {
+      width: 450px;
+      padding: 15px 0 15px 20px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      color: $second-text-color;
+      background: #f9f9f9;
+      border: 1px solid #e6e6e6;
+      border-radius: 5px 0 0 5px;
+      position: relative;
+      left: 5px;
+    }
+    button {
+      padding: 15px 22.5px;
+      background-color: #d0a144;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: $light-text-color;
+      border: 1px solid #e6e6e6;
+      border-radius: 0px 5px 5px 0px;
+    }
+  }
+  .background {
+    width: 100%;
+    height: 77px;
+    background: #252B42;
+    position: relative;
+    bottom: 57px;
+    z-index: 1;
+
+  }
+}
+
 .section_grey {
   background-color: #fafafa;
 }
