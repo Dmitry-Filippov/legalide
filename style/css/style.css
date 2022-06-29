@@ -401,14 +401,89 @@ body {
 .subscribe .background {
   width: 100%;
   height: 77px;
-  background: #252B42;
+  background: #252b42;
   position: relative;
   bottom: 57px;
   z-index: 1;
 }
 
+.get-in-touch {
+  padding: 80px 0 155px 0;
+}
+.get-in-touch .contacts {
+  padding-top: 80px;
+  list-style: none;
+  width: 93.9047619048%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+.get-in-touch .contacts li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 333px;
+}
+.get-in-touch .contacts li .icon {
+  width: 72px;
+  height: 72px;
+  background-position: center;
+  background-size: cover;
+}
+.get-in-touch .contacts li .phone-icon {
+  background-image: url(../../imgs/phone-icon.svg);
+}
+.get-in-touch .contacts li .location-icon {
+  background-image: url(../../imgs/location-icon.svg);
+}
+.get-in-touch .contacts li .mail-icon {
+  background-image: url(../../imgs/mail-icon.svg);
+}
+.get-in-touch .contacts li p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  padding-top: 15px;
+}
+.get-in-touch .contacts li p:last-of-type {
+  font-size: 16px;
+  letter-spacing: 0.1px;
+}
+.get-in-touch .contacts li button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #d0a144;
+  width: 154px;
+  height: 44px;
+  margin-top: 15px;
+  border: none;
+  border: 1px solid #d0a144;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+}
+.get-in-touch .contacts li:nth-of-type(2) {
+  height: 393px;
+  background-color: #252b42;
+}
+.get-in-touch .contacts li:nth-of-type(2) p {
+  color: #fff;
+}
+
 .section_grey {
   background-color: #fafafa;
+}
+.section_grey .section__subtitle {
+  padding-top: 10px;
 }
 
 .section__wrapper {
