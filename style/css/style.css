@@ -61,6 +61,25 @@ body {
 .header .header__navbar .header__links li a:hover {
   opacity: 0.7;
 }
+.header .header__navbar .header__links li button {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: none;
+  margin-left: 39px;
+}
+.header .header__navbar .header__links li button.search {
+  position: relative;
+  top: 3px;
+}
+.header .header__navbar .header__links li button.shopping {
+  margin-left: 18px;
+}
+.header .header__navbar .header__links li:last-of-type {
+  position: absolute;
+  top: 45px;
+  right: 60px;
+}
 .header .header__section {
   display: flex;
   width: 72.8155339806%;
