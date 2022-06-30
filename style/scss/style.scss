@@ -18,6 +18,114 @@ body {
   font-style: normal;
 }
 
+.header-mob {
+  display: none;
+  padding: 36px 0 0 0;
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+      color: #252b42;
+    }
+    ul {
+      list-style: none;
+      width: 80px + 24px + 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .links {
+    padding-top: 100px - 30px;
+    padding-bottom: 98px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li {
+      padding-top: 30px;
+      a {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #737373;
+      }
+    }
+  }
+
+  .main-section {
+    padding-top: 84px;
+    background-image: url(../../imgs/header-background.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 50px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #252b42;
+      width: 323px;
+      margin: 0 auto;
+    }
+    p {
+      padding-top: 35px;
+      width: 376px;
+      margin: 0 auto;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #737373;
+    }
+    button:first-of-type {
+      margin-top: 35px;
+      background: #784f33;
+      border-radius: 37px;
+      padding: 10px 36px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+      border: none;
+    }
+    button:last-of-type {
+      margin-top: 20px;
+      padding: 10px 36px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #784f33;
+      border: none;
+      border: 1px solid #784f33;
+      border-radius: 37px;
+    }
+    .woman {
+      margin-top: 108px;
+      width: 377px;
+      height: auto;
+    }
+  }
+}
+
 .header {
   background-image: url("../../imgs/header-background.png");
   background-size: cover;
@@ -686,6 +794,118 @@ body {
     .youtube-icon {
       background-image: url(../../imgs/youtube-icon.svg);
       height: 17.68px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    display: none;
+  }
+
+  .header-mob {
+    display: block;
+  }
+
+  .content .practice-areas {
+    padding-top: 140px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding-top: 75px;
+    }
+  }
+
+  .content .practice-advice {
+    padding-top: 98px;
+    .practice-advice__cards {
+      grid-template-columns: 1fr;
+      max-width: 241px;
+      margin: 0 auto;
+    }
+  }
+  .content .about-us {
+    .about-us__wrapper {
+      flex-direction: column;
+      .about-us__video {
+        max-width: 100%;
+      }
+      .about-us__text {
+        padding-top: 72px;
+        width: 100%;
+        padding-bottom: 135px;
+        .section__title {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .content .subscribe {
+    ul.icons-row {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 81px;
+      padding-bottom: 85px;
+      li {
+        margin: 0;
+        padding: 0;
+        margin-top: 60px;
+        &:first-of-type {
+          margin: 0;
+        }
+      }
+    }
+    form {
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      div { 
+        width: 337px;
+      }
+      input {
+        max-width: 207px;
+      }
+      button {
+        max-width: 117px;
+      }
+    }
+    div.background {
+      display: none;
+    }
+  }
+
+  .content .get-in-touch {
+    ul.contacts {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .footer {
+    .footer__upperline .section__wrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: 236px;
+      button {
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .footer__centerline {
+    .section__wrapper {
+      grid-template-columns: 1fr;
+      max-width: 360px;
+    }
+  }
+
+  .footer__underline .section__wrapper {
+    display: flex;
+    flex-direction: column;
+    & ul  {
+      padding-top: 50px;
     }
   }
 }

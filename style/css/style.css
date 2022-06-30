@@ -11,6 +11,113 @@ body {
   font-style: normal;
 }
 
+.header-mob {
+  display: none;
+  padding: 36px 0 0 0;
+}
+.header-mob .icons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.header-mob .icons p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.header-mob .icons ul {
+  list-style: none;
+  width: 128px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-mob .links {
+  padding-top: 70px;
+  padding-bottom: 98px;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-mob .links li {
+  padding-top: 30px;
+}
+.header-mob .links li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.header-mob .main-section {
+  padding-top: 84px;
+  background-image: url(../../imgs/header-background.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-mob .main-section h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  width: 323px;
+  margin: 0 auto;
+}
+.header-mob .main-section p {
+  padding-top: 35px;
+  width: 376px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.header-mob .main-section button:first-of-type {
+  margin-top: 35px;
+  background: #784f33;
+  border-radius: 37px;
+  padding: 10px 36px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  border: none;
+}
+.header-mob .main-section button:last-of-type {
+  margin-top: 20px;
+  padding: 10px 36px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #784f33;
+  border: none;
+  border: 1px solid #784f33;
+  border-radius: 37px;
+}
+.header-mob .main-section .woman {
+  margin-top: 108px;
+  width: 377px;
+  height: auto;
+}
+
 .header {
   background-image: url("../../imgs/header-background.png");
   background-size: cover;
@@ -673,6 +780,101 @@ body {
 .footer__underline .icons .youtube-icon {
   background-image: url(../../imgs/youtube-icon.svg);
   height: 17.68px;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    display: none;
+  }
+  .header-mob {
+    display: block;
+  }
+  .content .practice-areas {
+    padding-top: 140px;
+  }
+  .content .practice-areas ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+  }
+  .content .practice-advice {
+    padding-top: 98px;
+  }
+  .content .practice-advice .practice-advice__cards {
+    grid-template-columns: 1fr;
+    max-width: 241px;
+    margin: 0 auto;
+  }
+  .content .about-us .about-us__wrapper {
+    flex-direction: column;
+  }
+  .content .about-us .about-us__wrapper .about-us__video {
+    max-width: 100%;
+  }
+  .content .about-us .about-us__wrapper .about-us__text {
+    padding-top: 72px;
+    width: 100%;
+    padding-bottom: 135px;
+  }
+  .content .about-us .about-us__wrapper .about-us__text .section__title {
+    width: 100%;
+    text-align: center;
+  }
+  .content .subscribe ul.icons-row {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 81px;
+    padding-bottom: 85px;
+  }
+  .content .subscribe ul.icons-row li {
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+  }
+  .content .subscribe ul.icons-row li:first-of-type {
+    margin: 0;
+  }
+  .content .subscribe form {
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .content .subscribe form div {
+    width: 337px;
+  }
+  .content .subscribe form input {
+    max-width: 207px;
+  }
+  .content .subscribe form button {
+    max-width: 117px;
+  }
+  .content .subscribe div.background {
+    display: none;
+  }
+  .content .get-in-touch ul.contacts {
+    grid-template-columns: 1fr;
+  }
+  .footer .footer__upperline .section__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 236px;
+  }
+  .footer .footer__upperline .section__wrapper button {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .footer__centerline .section__wrapper {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+  .footer__underline .section__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__underline .section__wrapper ul {
+    padding-top: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
